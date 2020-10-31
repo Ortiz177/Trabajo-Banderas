@@ -12,15 +12,15 @@ public class Juego{
 
 	public static void comojugar(){
 		do{
-		   System.out.println(ConsoleColors.YELLOW + "   ____                                     _                                ");
-           System.out.println(ConsoleColors.YELLOW + "  / ___|   ___    _ __ ___     ___         | |  _   _    __ _    __ _   _ __ ");
-           System.out.println(ConsoleColors.GREEN + "  | |      / _ \  | '_ ` _ \   / _ \     _  | | | | | |  / _` |  / _` | | '__|");
-           System.out.println(ConsoleColors.GREEN + "  | |___  | (_) | | | | | | | | (_) |   | |_| | | |_| | | (_| | | (_| | | |   ");
-           System.out.println(ConsoleColors.PURPLE + "  \____|  \___/  |_| |_| |_|  \___/     \___/   \__,_|  \__, |  \__,_| |_|   ");
-           System.out.println(ConsoleColors.PURPLE + "                                                        |___/                ");
-           System.out.println("1. Elige la opcion jugar");
-           System.out.println("2. Leer las preguntas y contestarlas");
-           System.out.println("3.Acomula puntos");
+			System.out.println(ConsoleColors.YELLOW + "   ____                                      _                                ");
+			System.out.println(ConsoleColors.YELLOW + "  / ___|    ___    _ __ ___     ___         | |  _   _    __ _    __ _   _ __ ");
+			System.out.println(ConsoleColors.GREEN +  "  | |      / _ \\  | '_ ` _ \\   / _ \\     _  | | | | | |  / _` |  / _` | | '__|");
+			System.out.println(ConsoleColors.GREEN +  "  | |___  | (_) | | | | | | | | (_) |   | |_| | | |_| | | (_| | | (_| | | |   ");
+			System.out.println(ConsoleColors.PURPLE + "   \\____|  \\___/  |_| |_| |_|  \\___/     \\___/   \\__,_|  \\__, |  \\__,_| |_|   ");
+			System.out.println(ConsoleColors.PURPLE + "                                                        |___/                ");
+			System.out.println("1. Elige la opcion jugar");
+            System.out.println("2. Leer las preguntas y contestarlas");
+            System.out.println("3.Acomula puntos");
 	    }
 	}
 
@@ -53,8 +53,7 @@ public class Juego{
         System.out.println(ConsoleColors.BLUE + ".##.....##.########.########..######..##.....##.##....##.########..##.....##..#######.");
         System.out.println();
         System.out.println();
-        System.out.println("Somos unos prgramadores principiantes, ojala disfruten del juego");
-
+		System.out.println(ConsoleColors.YELLOW + "Somos unos programadores principiantes, ojala disfruten del juego ;)");
 	}
 
 	public static void colores(String[]color) {
@@ -132,14 +131,14 @@ public class Juego{
 
 		do{
 			System.out.println();
-			System.out.println(ConsoleColors.CYAN + " _______  _______  _______  _______    _______  _        _______  _______  _______  ");
-			System.out.println(ConsoleColors.CYAN + "(  ____ \(  ___  )(       )(  ____ \  (  ____ \( \      (  ___  )(  ____ \(  ____ \ ");
-			System.out.println(ConsoleColors.CYAN + "| (    \/| (   ) || () () || (    \/  | (    \/| (      | (   ) || (    \/| (    \/ ");
-			System.out.println(ConsoleColors.CYAN + "| |      | (___) || || || || (__      | (__    | |      | (___) || |      | (_____  ");
-			System.out.println(ConsoleColors.CYAN + "| | ____ |  ___  || |(_)| ||  __)     |  __)   | |      |  ___  || | ____ (_____  ) ");
-			System.out.println(ConsoleColors.CYAN + "| | \_  )| (   ) || |   | || (        | (      | |      | (   ) || | \_  )      ) | ");
-			System.out.println(ConsoleColors.CYAN + "| (___) || )   ( || )   ( || (____/\  | )      | (____/\| )   ( || (___) |/\____) | ");
-			System.out.println(ConsoleColors.CYAN + "(_______)|/     \||/     \|(_______/  |/       (_______/|/     \|(_______)\_______) ");
+			System.out.println(ConsoleColors.CYAN + " _______  _        _______  _______  _______        _______  _______  _______  _______ ");
+			System.out.println(ConsoleColors.CYAN + "(  ____ \\( \\      (  ___  )(  ____ \\(  ____ \\      (  ____ \\(  ___  )(       )(  ____ \\");
+			System.out.println(ConsoleColors.CYAN + "| (    \\/| (      | (   ) || (    \\/| (    \\/      | (    \\/| (   ) || () () || (    \\/");
+			System.out.println(ConsoleColors.CYAN + "| (__    | |      | (___) || |      | (_____       | |      | (___) || || || || (__    ");
+			System.out.println(ConsoleColors.CYAN + "|  __)   | |      |  ___  || | ____ (_____  )      | | ____ |  ___  || |(_)| ||  __)   ");
+			System.out.println(ConsoleColors.CYAN + "| (      | |      | (   ) || | \\_  )      ) |      | | \\_  )| (   ) || |   | || (      ");
+			System.out.println(ConsoleColors.CYAN + "| )      | (____/\\| )   ( || (___) |/\\____) |      | (___) || )   ( || )   ( || (____/\\");
+			System.out.println(ConsoleColors.CYAN + "|/       (_______/|/     \\|(_______)\\_______)      (_______)|/     \\||/     \\|(_______/");
 			System.out.println("Elige una opcion");
 			System.out.println("1.Jugar");
 			System.out.println("2.Como Jugar");
