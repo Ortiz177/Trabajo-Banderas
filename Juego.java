@@ -56,37 +56,37 @@ public class Juego{
 		System.out.println(ConsoleColors.YELLOW + "Somos unos programadores principiantes, ojala disfruten del juego ;)");
 	}
 
-	public static void colores(String[]color) {
+	public static void colores(String fila[]) {
+		for (int i = 0; i < fila.length; i++) {
+			if (fila[i].equals("1")) {
+				System.out.println(ConsoleColors.RED_BACKGROUND + "  ");
+			}
+			if (fila[i].equals("2")) {
+				System.out.println(ConsoleColors.BLUE_BACKGROUND + "  ");
+			}
+			if (fila[i].equals("3")) {
+				System.out.println(ConsoleColors.WHITE_BACKGROUND + "  ");
+			}
+			if (fila[i].equals("4")) {
+				System.out.println(ConsoleColors.YELLOW_BACKGROUND + "  ");
+			}
+			if (fila[i].equals("5")) {
+				System.out.println(ConsoleColors.GREEN_BACKGROUND + "  ");
+			}
+			if (fila[i].equals("6")) {
+				System.out.println(ConsoleColors.PURPLE_BACKGROUND + "  ");
+			}
+			if (fila[i].equals("7")) {
+				System.out.println(ConsoleColors.CYAN_BACKGROUND + "  ");
+			}
+			if (fila[i].equals("8")) {
+				System.out.println(ConsoleColors.BLACK_BACKGROUND + "  ");
+			}
+		}
 
-        for(int i=0;1> color.lengt; i++){
-            if (color.equal("1")){
-                System.out.println(ConsoleColors.RED + "")
-              }else if (color.equal("2")){
-                System.out.println(ConsoleColors.BLUE + "")
-                
-                } else if (color.equal("3")){
-                    System.out.println(ConsoleColors.WHITE + "")
-                  }
-                
-
-                  else if (color.equal("4")){
-                    System.out.println(ConsoleColors.YELLOW + "")
-                  }
-                     else if (color.equal("5")){
-                      System.out.println(ConsoleColors.GREEN + "")
-                    }
-        
-                
-                   else if (color.equal("6")){
-                    System.out.println(ConsoleColors.PURPLE + "")}
-                    
-                    else if (color.equal("7")){
-                        System.out.println(ConsoleColors.CYAN + "")}
-                        
-                        else if (color.equal("8")){
-                            System.out.println(ConsoleColors.BLACK + "")}
-        }
+		System.out.println(ConsoleColors.RESET);
 	}
+
 	                       
 	public static void imprimirBandera(String[] banderas, int indice) {
 		for (int i = indice; i < indice + 20; i++) {
