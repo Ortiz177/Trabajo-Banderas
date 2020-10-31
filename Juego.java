@@ -7,7 +7,9 @@ public class Juego{
 		int indices[] = crearIndices(banderas.length / 20);
 		indices = RandomizeArray(indices);
 		imprimirBandera(banderas, indices[20]);
-
+		System.out.println();
+		System.out.println("¿A que pais pertenece esta bandera?");
+		String answer = ConsoleInput.getString();
 	}
 
 	public static void comojugar(){
@@ -59,28 +61,28 @@ public class Juego{
 	public static void colores(String fila[]) {
 		for (int i = 0; i < fila.length; i++) {
 			if (fila[i].equals("1")) {
-				System.out.println(ConsoleColors.RED_BACKGROUND + "  ");
+				System.out.print(ConsoleColors.RED_BACKGROUND + "  ");
 			}
 			if (fila[i].equals("2")) {
-				System.out.println(ConsoleColors.BLUE_BACKGROUND + "  ");
+				System.out.print(ConsoleColors.BLUE_BACKGROUND + "  ");
 			}
 			if (fila[i].equals("3")) {
-				System.out.println(ConsoleColors.WHITE_BACKGROUND + "  ");
+				System.out.print(ConsoleColors.WHITE_BACKGROUND + "  ");
 			}
 			if (fila[i].equals("4")) {
-				System.out.println(ConsoleColors.YELLOW_BACKGROUND + "  ");
+				System.out.print(ConsoleColors.YELLOW_BACKGROUND + "  ");
 			}
 			if (fila[i].equals("5")) {
-				System.out.println(ConsoleColors.GREEN_BACKGROUND + "  ");
+				System.out.print(ConsoleColors.GREEN_BACKGROUND + "  ");
 			}
 			if (fila[i].equals("6")) {
-				System.out.println(ConsoleColors.PURPLE_BACKGROUND + "  ");
+				System.out.print(ConsoleColors.PURPLE_BACKGROUND + "  ");
 			}
 			if (fila[i].equals("7")) {
-				System.out.println(ConsoleColors.CYAN_BACKGROUND + "  ");
+				System.out.print(ConsoleColors.CYAN_BACKGROUND + "  ");
 			}
 			if (fila[i].equals("8")) {
-				System.out.println(ConsoleColors.BLACK_BACKGROUND + "  ");
+				System.out.print(ConsoleColors.BLACK_BACKGROUND + "  ");
 			}
 		}
 
