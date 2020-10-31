@@ -171,20 +171,24 @@ public class Juego{
 			centinela= ConsoleInput.getInt();
 
 			switch (centinela) {
-				case 1: jugar();
+				case 1: score += jugar();
 				        break;
 				case 2: comojugar();
 				        break;
 				case 3: creditos();
 						break;
-				case 4: System.out.println("Gracias por jugar!");
+				case 4: System.out.println("Gracias por jugar! tu puntaje fue: " + score);
 				        break;
 				default: System.out.println("No se encuentra esta opcion");
 						break;
 			}
 		} while (centinela != 4);
-    }
+
+		return score;
+	}
+	  
     public static void main(String[] args) {
-    	menu();
+		int score = 0;
+		menu(score);
     }
 }
