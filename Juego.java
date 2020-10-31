@@ -52,6 +52,7 @@ public class Juego {
 		imprimirBandera(banderas, indices[20]);
 		System.out.println();
 		System.out.println("¿A que pais pertenece esta bandera?");
+		System.out.println("Por favor ingresar el pais con la primera letra en mayuscula")
 		String answer = ConsoleInput.getString();
 
 		return pointsCount(validateAnswer(answer, banderas, indices[20]));
