@@ -2,15 +2,44 @@ import java.util.Scanner;
 import java.util.Arrays;
 public class Juego{
 
-	public static void jugar(){
+	public static int jugar() {
 		String banderas[] = ConsoleFile.read("recursos/info_banderas.csv");
 		int indices[] = crearIndices(banderas.length / 20);
 		indices = RandomizeArray(indices);
+		// System.out.println("hola soy el #: "+ indices[9]);
+
 		imprimirBandera(banderas, indices[20]);
 		System.out.println();
 		System.out.println("¿A que pais pertenece esta bandera?");
 		String answer = ConsoleInput.getString();
+
+		return pointsCount(validateAnswer(answer, banderas, indices[20]));
 	}
+
+	public static int pointsCount(boolean validation) {
+		int points = 0;
+
+		if (validation == true) {
+			points = 1;
+		}
+		return points;
+	}
+
+	public static boolean validateAnswer(String answer, String banderas[], int indice) {
+		boolean isMatch = false;
+		String fila[];
+		String country;
+
+		fila = banderas[indice].split(";");
+		country = fila[0];
+		System.out.println("Nombre pais: " +country);
+
+		if (country.equals(answer)) {
+			isMatch = true;
+		}
+		return isMatch;
+	}
+
 
 	public static void comojugar(){
 		do{
