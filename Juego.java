@@ -16,7 +16,7 @@ public class Juego{
 		return pointsCount(validateAnswer(answer, banderas, indices[20]));
 	}
 
-	public static int pointsCount(boolean validation) {
+		public static int pointsCount(boolean validation) {
 		int points = 0;
 
 		if (validation == true) {
