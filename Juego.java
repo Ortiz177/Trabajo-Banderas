@@ -3,10 +3,10 @@ import java.util.Arrays;
 public class Juego{
 
 	public static void jugar(){
-		int indices[] = crearIndices(20);
+		String banderas[] = ConsoleFile.read("recursos/info_banderas.csv");
+		int indices[] = crearIndices(banderas.length / 20);
 		indices = RandomizeArray(indices);
-		//System.out.println(Arrays.toString(indices));
-		String banderas[] = ConsoleFile.read("recursos/info_banderas.csv")
+		imprimirBandera(banderas, indices[20]);
 
 	}
 
@@ -86,17 +86,11 @@ public class Juego{
                         else if (color.equal("8")){
                             System.out.println(ConsoleColors.BLACK + "")}
         }
-    }                        
-
-	public static void imprimirBandera(String[]banderas,int indice){
-		String fila[];
-		for (int i=indice;i<indice + 20;i++ ) {
-			if(i == indice){
-				fila = banderas[i].split(";");
-			}
-			else{
-			System.out.println(banderas[i]);
-			}
+	}
+	                       
+	public static void imprimirBandera(String[] banderas, int indice) {
+		for (int i = indice; i < indice + 20; i++) {
+			colores(banderas[i].split(";"));
 		}
 	}
 
