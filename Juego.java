@@ -127,9 +127,8 @@ public class Juego{
 	public static void menu(){
 
 		int centinela = 0;
-		
 
-		do{
+		do {
 			System.out.println();
 			System.out.println(ConsoleColors.CYAN + " _______  _        _______  _______  _______        _______  _______  _______  _______ ");
 			System.out.println(ConsoleColors.CYAN + "(  ____ \\( \\      (  ___  )(  ____ \\(  ____ \\      (  ____ \\(  ___  )(       )(  ____ \\");
@@ -143,23 +142,22 @@ public class Juego{
 			System.out.println("1.Jugar");
 			System.out.println("2.Como Jugar");
 			System.out.println("3.Creditos");
-			System.out.prinln("4.Salir");
+			System.out.println("4.Salir");
 			centinela= ConsoleInput.getInt();
 
-			switch(centinela){
-
+			switch (centinela) {
 				case 1: jugar();
 				        break;
 				case 2: comojugar();
 				        break;
 				case 3: creditos();
+						break;
+				case 4: System.out.println("Gracias por jugar!");
 				        break;
-				case 4: salir();
-				        break;
-                default: System.out.println("No se encuentra esta opcion");					
+				default: System.out.println("No se encuentra esta opcion");
+						break;
 			}
-		}
-		while(centinela!=4);
+		} while (centinela != 4);
     }
     public static void main(String[] args) {
     	menu();
